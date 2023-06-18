@@ -1,6 +1,7 @@
 from reactpy import component, html, hooks;
 from reactpy.backend.fastapi import configure;
 from fastapi import FastAPI;
+from new_component import Item2
 
 # pip install "reactpy[fastapi]" // con backend
 # pip install "unicorn[standard]"
@@ -33,6 +34,7 @@ def HelloWorld():
       Item("Tarea 1 con componente"),
       Item("Using React with Python"),
       Item("Tarea 3", initial_done=True),
+      Item2('Component "Item2"')
     )
   )  
 

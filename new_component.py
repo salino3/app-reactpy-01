@@ -6,5 +6,4 @@ from fastapi import FastAPI;
 def Item2(text):
   return html.li(text)
 
-
-
+export = Item2
